@@ -13,6 +13,7 @@
     return app.use("/components", express.static(path.join(__dirname, 'components')));
   });
   server = require("http").createServer(app);
+  require("dronestream").listen(server); 
   new faye.NodeAdapter({
     mount: '/faye',
     timeout: 45

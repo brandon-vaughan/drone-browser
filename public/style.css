@@ -16,9 +16,23 @@ body {
 }
 #stats {
     position: absolute;
-    bottom: 20px; 
-    right: 20px;
+    bottom: 0px; 
+    left: 0px;
     font-size: 26px;
+    background: rgba(0,0,0,.1);
+    padding: 1.5% 5%;
+    overflow: auto;
+    width: 90%;
+
+}
+#stats div {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: italic;
+    color: #777;
+    padding: 0 10px;
+    float: left;
+    font-weight: bold;
 }
 .buttons {
     text-align: center;
@@ -26,3 +40,5 @@ body {
 .dropdown-menu {
     text-align: left;
 }
+#droneStream { text-align: center; }
+#droneStream canvas { margin: 20px auto; }
